@@ -15,7 +15,7 @@ export default {
 <style>
 .page-footer {
   font-size: 12px;
-  margin-top: 50px;
+  margin-top: 20px;
   opacity: 0.4;
   color: var(--text-color);
 }
