@@ -29,9 +29,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .icons {
-  filter: invert(1);
+  filter: invert(0.2);
   opacity: 0.5;
   transition: all 0.3s ease;
 }

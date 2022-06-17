@@ -1,39 +1,36 @@
 <template>
   <div class="home">
     <div class="main-page">
-      <div class="box-container">
-        <el-row gutter=20 >
-          <el-col :span="12" style="text-align:right;">
-            Hi,
-          </el-col>
-          <el-col :span="12" style="text-align:left;">
-            欢迎来到曼彻斯特
-          </el-col>
-          <el-col :span="12" style="text-align:right;">
-            I'm Grady.
-          </el-col>
-        </el-row>
+      <div class="box-container" id="box-one" @click="handleBoxOne">
+        <!-- BOX_CONTAINER_1 -->
       </div>
-      <div class="box-container">
-        <router-link to="/p5js" class="link">
-          Click me to p5js
-        </router-link>
+      <div class="box-container" id="box-two" @click="handleBoxTwo">
+        <!-- BOX_CONTAINER_2 -->
       </div>
-      <div class="box-container">
-        <img src="../assets/images/cgt.jpg" alt="" class="cgt-pic">
+      <div class="box-container" id="box-three" @click="handleBoxThree">
+        <!-- BOX_CONTAINER_3 -->
       </div>
-      <div class="box-container">
-        Section - 4
+      <div class="box-container" id="box-four">
+        <!-- BOX_CONTAINER_4 -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'Home'
+  name: 'Home',
+  methods: {
+    handleBoxOne() {
+      this.$router.push('/TheNine')
+    },
+    handleBoxTwo() {
+      this.$router.push('/syf')
+    },
+    handleBoxThree() {
+      this.$router.push('/mdd')
+    },
+  }
 }
 </script>
 
@@ -53,21 +50,30 @@ export default {
 }
 
 .box-container {
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
+  margin-bottom: 30px;
+  display: flex;
   height: 500px;
-  /* border: 1px solid;
-  box-shadow: var(--el-box-shadow-dark); */
+  /* border: 1px solid; */
+  box-shadow: var(--el-box-shadow);
+  transition: all 0.5s ease;
+}
+
+.box-container:hover {
+  width: 100%;
+  box-shadow: var(--el-box-shadow-dark);
+  transition: all 0.5s ease;
 }
 
 .cgt-pic {
   height: 100%;
-  box-shadow: var(--el-box-shadow-dark);
+  box-shadow: var(--el-box-shadow);
 }
 
 @media(min-width: 1000px) {
   .main-page {
-    width: 850px;
+    width: 900px;
   }
 }
 </style>

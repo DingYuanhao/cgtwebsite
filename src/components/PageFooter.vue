@@ -1,6 +1,5 @@
 <template>
   <div style="text-align: center;">
-    
     <div class="page-footer">沪公网安备31010602006765号</div>
     <div class="page-footer">沪ICP备2022016111号</div>
   </div>
@@ -15,7 +14,7 @@ export default {
 <style>
 .page-footer {
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 5px;
   opacity: 0.4;
   color: var(--text-color);
 }

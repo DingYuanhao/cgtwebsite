@@ -19,12 +19,9 @@ export default {
 
 <style>
 :root {
-  --main-color: #362222;
-  --second-color: #171010;
-  --third-color: #423F3E;
-  --forth-color: #2B2B2B;
-  --text-color: #eeeeee;
-  --text-link-color: #aaaaaa;
+  --main-theme-color: #dddddd;
+  --text-color: #333333;
+  --text-link-color: #999999;
 }
 
 body {
