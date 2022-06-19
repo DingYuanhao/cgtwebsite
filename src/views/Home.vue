@@ -2,16 +2,22 @@
   <div class="home">
     <div class="main-page">
       <div class="box-container" id="box-one" @click="handleBoxOne">
-        <!-- BOX_CONTAINER_1 -->
+        <div style="margin: 0 auto; font-size: 32px;">
+          Hi 我是陈甘湉
+        </div>
       </div>
-      <div class="box-container" id="box-two" @click="handleBoxTwo">
-        <!-- BOX_CONTAINER_2 -->
+      <div class="box-container" id="box-two">
+        <div style="margin: 0 auto; font-size: 32px;">
+          Hi 我是syf
+        </div>
       </div>
-      <div class="box-container" id="box-three" @click="handleBoxThree">
-        <!-- BOX_CONTAINER_3 -->
+      <div class="box-container" id="box-three">
+        <div style="margin: 0 auto; font-size: 32px;">
+          Hi 我是麦兜兜
+        </div>
       </div>
       <div class="box-container" id="box-four">
-        <!-- BOX_CONTAINER_4 -->
+        BOX_CONTAINER_4
       </div>
     </div>
   </div>

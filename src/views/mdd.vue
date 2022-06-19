@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1> MDD </h1>
+  <div style="margin: 30px auto; width: 50%;">
+    <img src="../assets/images/mdd1.jpg" alt="" style="width: 100%;">
   </div>
 </template>
 

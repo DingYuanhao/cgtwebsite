@@ -2,6 +2,7 @@
   <router-view></router-view>
   <ContactMe class="contact"></ContactMe>
   <PageFooter></PageFooter>
+  <img src="./assets/icons/cgt.png" alt="" class="cgt-watching-u">
 </template>
 
 <script>
@@ -42,5 +43,11 @@ body {
   top: calc((100vh - 150px)/2);
   left: 10px;
   /* border: 1px solid; */
+}
+
+.cgt-watching-u {
+  position: fixed;
+  bottom: 0;
+  width: 120px;
 }
 </style>

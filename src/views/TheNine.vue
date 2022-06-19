@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1> The Nine</h1>
+    <h1 style="margin: 0 auto; width: 100%; text-align: center;">视差滚动</h1>
+
   </div>
 </template>
 

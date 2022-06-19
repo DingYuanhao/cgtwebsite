@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1> SYF </h1>
+  <div style="margin: 30px auto; width: 100%;">
+    <img src="../assets/images/syf1.jpg" alt="" style="width: 50%;">
   </div>
 </template>
 
