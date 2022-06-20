@@ -25,9 +25,11 @@ export default {
   --text-link-color: #999999;
 }
 
-body {
+html, body {
   background-color: var(--main-color);
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -41,7 +43,7 @@ body {
 .contact {
   position: fixed;
   top: calc((100vh - 150px)/2);
-  left: 10px;
+  padding-left: 10px;
   /* border: 1px solid; */
 }
 
