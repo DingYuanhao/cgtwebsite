@@ -2,7 +2,7 @@
   <router-view></router-view>
   <ContactMe class="contact"></ContactMe>
   <PageFooter></PageFooter>
-  <img src="./assets/icons/cgt.png" alt="" class="cgt-watching-u">
+  <img src="./assets/icons/cgt.png" alt="" class="cgt-watching-u" :class="{'cgt-right' : cgtRight}" @click="cgtClicked">
 </template>
 
 <script>
@@ -14,6 +14,16 @@ export default {
   components: {
     PageFooter,
     ContactMe
+  },
+  data() {
+    return {
+      cgtRight: false,
+    }
+  },
+  methods: {
+    cgtClicked() {
+      this.cgtRight = !this.cgtRight
+    }
   }
 }
 </script>
@@ -51,5 +61,11 @@ html, body {
   position: fixed;
   bottom: 0;
   width: 120px;
+  transition: 0.3s ease;
+}
+
+.cgt-right {
+  transform: translateX(calc(100vw - 120px)) rotateY(180deg);
+  transition: 0.3s ease;
 }
 </style>

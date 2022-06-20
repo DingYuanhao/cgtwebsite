@@ -1,6 +1,7 @@
 <template>
-  <div style="margin: 30px auto; width: 50%;">
-    <img src="../assets/images/mdd1.jpg" alt="" style="width: 100%;">
+  <div style="margin: 30px auto; text-align: center;">
+    <h1>我是mdd！</h1>
+    <img src="../assets/images/mdd1.jpg" alt="" style="width: 50%;">
   </div>
 </template>
 
